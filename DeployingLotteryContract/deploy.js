@@ -18,7 +18,7 @@ const deploy = async ()=>{
     console.log('Attempting to deploy from account',accounts[0]);
     //interface is the ABI
     const result = await new web3.eth.Contract(JSON.parse(interface))
-    .deploy({ data : '0x' + bytecode, arguments : ['Hi There'] })
+    .deploy({ data : '0x' + bytecode })
     .send({ gas : '1000000', from : accounts[0] });
     console.log('Contract deployed to',result.options.address);
     //after this the address in result.options.address is present in rinkeby network
