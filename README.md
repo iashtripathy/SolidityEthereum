@@ -7,13 +7,13 @@ So far two contracts has been created:
 
 Both Inbox Contract,Lottery Contract has been tested and deployed to local network and Rinkeby network.
 
--------------------------------------------------For Inbox Contract---------------------------------------------------
+-------------------------------------------------For Inbox Contract---------------------------------------------------</br>
 To deploy to local network:
 Go to the main folder(cd DeployingToLocalNetwrok) and execute:num run test
 To deploy to Rinkeby network:
 Go to the main folder(DeployingToRinkebyNetwork) and execute:node deploy.js
 
--------------------------------------------------For Lottery Contract-------------------------------------------------
+-------------------------------------------------For Lottery Contract-------------------------------------------------</br>
 To deploy to local network:
 Go to the main folder(cd DeployingLotteryContract) and execute:num run test
 To deploy to Rinkeby network:
