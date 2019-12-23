@@ -1,13 +1,16 @@
 <p>main-page works!</p>
 <p>This Contract is managed by : {{manager}}</p>
 <p>The current Balance is : {{balance}}</p>
-<p>No of players entered the pool is : {{players.length}}</p>
+<p>No of players entered the pool is : {{playersLength}}</p>
 
 <form>
   <h4>Want to try your luck?</h4>
   <div>
     <label>Amount of ether to enter:</label>
-    <input type="number" placeholder="Enter ether">
-    <button>Submit</button>
+    <input type="number" placeholder="Enter ether" #input>
+    <button (click)="called(input.value)">Enter</button>
+    <br>
   </div>
 </form>
+<p>{{playersLength}}</p>
+<p>{{error}}</p>
